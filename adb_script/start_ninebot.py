@@ -15,3 +15,8 @@ def start_demo_for_start_ninebot():
     time.sleep(2)
     cmd = 'adb shell am start -n com.lu.example.hello_xposed/com.lu.example.hello_xposed.hello.app.StartNinebotActivity'
     os.popen(cmd)
+
+
+def reboot_device():
+    cmd = 'adb shell reboot'
+    os.popen(cmd)

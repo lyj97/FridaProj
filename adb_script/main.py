@@ -1,7 +1,7 @@
 import time
 
 from adb_script.phone_state import is_screenState, wakeup_screen
-from adb_script.start_ninebot import start_demo_for_start_ninebot, kill_ninebot_and_demo_progress
+from adb_script.start_ninebot import start_demo_for_start_ninebot, kill_ninebot_and_demo_progress, reboot_device
 
 
 def start_ninebot():
@@ -17,6 +17,7 @@ def start_ninebot():
         count = count - 1
     kill_ninebot_and_demo_progress()
     print("已完成.")
+    reboot_device()
 
 
 def start_at_time():
